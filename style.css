@@ -1,0 +1,15 @@
+#test{
+    background-color: rgb(153, 231, 121);
+    height: 20vh;
+    min-height: 25px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90vw;
+    border-radius: 50px ;
+    margin: 0 auto;
+}
+#monka{
+    font-size: calc(4vw + 4vh - 3vmax);
+}
