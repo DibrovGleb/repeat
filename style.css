@@ -1,15 +1,64 @@
-#test{
-    background-color: rgb(153, 231, 121);
-    height: 20vh;
-    min-height: 25px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
     display: grid;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 90vw;
-    border-radius: 50px ;
-    margin: 0 auto;
 }
-#monka{
-    font-size: calc(4vw + 4vh - 3vmax);
+.clock{
+    display: inherit;
+    align-content: center;
+    width: 500px;
+    height: 200px;
+    padding: 40px;
+    background: rgb(252, 252, 252);
+    box-shadow: 10px 10px 50px #808080;
+    border-radius: 10px;
+}
+.clock .display{
+    padding: 10px;
+    height: 130px;
+    border-radius: 6px;
+    background: #dddddd;
+    box-shadow: 1px 1px 2px #80808085 inset,
+                0 1px 1px #ffffff;
+    position: relative;
+}
+.clock .display .weekdays{
+    font: 600 18px "Text Me One", sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.weekdays span{
+    opacity: 0.3;
+}
+.weekdays span.active{
+    opacity: 1;
+    color: rgb(61, 73, 236);
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 0;
+}
+.time span:not(.format){
+    font: 300 3.7em "Orbitron", sans-serif;
+}
+.time .format{
+    padding: 0 0 0 20px;
+    font: 400 32px "Text Me One", sans-serif;
+}
+.time .dot{
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+    5%{opacity: 0;}
 }
