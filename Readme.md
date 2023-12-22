@@ -1,8 +1,9 @@
 <div align="center">
 
-# This is l2codeagain repository
+# This is simple digital clock branch
 
-## Обычный репозиторий/Simple repository
+## Обычная ветка с часами/Simple branch with clocks
 
 </div>
+![Clocks gif](clocks.gif) / ![](clocks.gif)
 👍
