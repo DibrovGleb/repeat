@@ -1,4 +1,4 @@
-const {log} = console
+const {log} = console;
 
 let people =[
     {name:'Stephen', age : 25},
@@ -15,7 +15,6 @@ console.timeEnd('example')
 log('console.table')
 console.table(people)
 console.groupEnd()
-
 let arr = [1,2,3,4,5]
 let arr2 = [[1,2],[3,4],5]
 let o1 = { a: 1 }, o2 = { b: 2 }, o3 = { c: 3 }
