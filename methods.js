@@ -48,8 +48,10 @@ log(Array.isArray('Array.isArray',c)) // return true or false
 console.groupEnd()
 
 console.groupCollapsed('String methods')
-let month = ' Декабрь, Ноябрь, Октябрь,Сентябрь';
+let month = 'Декабрь, Ноябрь, Октябрь, Сентябрь';
+log('Basic string - ',month)
 let monthr = month.split(',').reverse().join(','); // to arr and back to string
+log('String after split(",").reverse().join(",") -', monthr)
 // split() - splits string into array 
 // join() - turn array into string separated by value
 let str = "552Simple DIMPLE string"
