@@ -21,6 +21,7 @@ function ageVerify(age){
 }
 console.groupEnd()
 
+console.groupCollapsed('Other...')
 log('Check promise and Closures (замыкания) in function.js')
 function displayMsg() {
     const message = 'Скрытое послание';
@@ -70,3 +71,5 @@ Promise.all([promise1, promise2]).then((value)=>{
 Promise.race([promise1, promise2]).then((value) => {
     log(value); // Both resolve, but promise2 is faster
 }); // return then faster one is completed
+console.groupEnd()
+log('Messages after setTimeout and promises')

@@ -1,5 +1,7 @@
-const {log} = console;
-
+const {log} = console, main = document.getElementById('main');
+main.addEventListener('click', (e) =>{
+    alert('Open console by pressing F12')
+})
 let people =[
     {name:'Stephen', age : 25},
     {name:'Keil', age: 30}
