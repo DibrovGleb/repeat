@@ -45,7 +45,7 @@ log(add5(2));
 log(add10(2));
 
 const userLeft = 0
-const userMem = 1
+const userMem = 0
 function watchTut (){
     return new Promise((resolve,reject)=>{
         if (userLeft) reject('Bye user')
